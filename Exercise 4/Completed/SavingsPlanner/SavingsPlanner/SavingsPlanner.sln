@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SavingsPlanner", "SavingsPlanner.csproj", "{260A87FB-D0BE-4802-8FF8-60A85A27E6B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{260A87FB-D0BE-4802-8FF8-60A85A27E6B1}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{260A87FB-D0BE-4802-8FF8-60A85A27E6B1}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{260A87FB-D0BE-4802-8FF8-60A85A27E6B1}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{260A87FB-D0BE-4802-8FF8-60A85A27E6B1}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{260A87FB-D0BE-4802-8FF8-60A85A27E6B1}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{260A87FB-D0BE-4802-8FF8-60A85A27E6B1}.Debug|iPhone.Build.0 = Debug|iPhone
+		{260A87FB-D0BE-4802-8FF8-60A85A27E6B1}.Release|iPhone.ActiveCfg = Release|iPhone
+		{260A87FB-D0BE-4802-8FF8-60A85A27E6B1}.Release|iPhone.Build.0 = Release|iPhone
+		{260A87FB-D0BE-4802-8FF8-60A85A27E6B1}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{260A87FB-D0BE-4802-8FF8-60A85A27E6B1}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{260A87FB-D0BE-4802-8FF8-60A85A27E6B1}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{260A87FB-D0BE-4802-8FF8-60A85A27E6B1}.AppStore|iPhone.Build.0 = AppStore|iPhone
+	EndGlobalSection
+EndGlobal
