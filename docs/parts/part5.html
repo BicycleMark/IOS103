@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+    <title>Organize images using an asset catalog</title>
+    <link rel="stylesheet" type="text/css" href="./res/styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./res/styles/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="./res/styles/styles.css">
+</head>
+
+<body>
+<!-- ************************************************************************************************************** -->
+
+    <header>IOS103 - Make your images look great on all devices</header>
+
+    <section id="main">
+
+        <h1 id="page-title"></h1>
+
+<!-- ************************************************************************************************************** -->
+
+
+        <h2>Goals</h2>
+
+        <p>
+            The goal of this lab is to create an Image Set to organize multiple images. Image Sets have the benefit of being less error prone because they don't use a file naming convention
+            for organization.
+        </p>
+
+        <img src="res/images/Ex5_Completed.png" width="750" alt="" style='border:1px solid #999999'/>
+
+
+<!-- ************************************************************************************************************** -->
+
+        <h2>Required assets</h2>
+        <p>
+                This is a continuation of the previous exercise. You can use your existing solution or open the solution in the <strong>Exercise 4/Completed folder</strong>. 
+                The <strong>Exercise 5</strong> folder contains a subfolder named <strong>Completed</strong> with a solution you can use to check your work. Please make sure you have these folders before you begin. 
+        </p>
+
+<!-- ************************************************************************************************************** -->
+
+        <h2>Challenge</h2>
+        <p>
+            <ol>
+                <li>Create an <strong>Asset Catalog</strong>.</li>
+                <li>Create an Image Set.</li>
+                <li>Apply an Image Set to a <code>UIImageView</code>.</li>
+            </ol>
+        </p>
+
+<!-- ************************************************************************************************************** -->
+
+        <h1>Steps</h1>
+        <div id="ide-selector">
+            Select the Visual Studio environment you want to work with:&nbsp;&nbsp;
+            <a href="#" data-name="xs">macOS</a>
+            or
+            <a href="#" data-name="vs">Windows</a>
+        </div>
+
+        <ide name="xs">
+            <h2>Create an Asset Catalog</h2>
+            <ol>
+                <li>
+                    Right-click on the SavingsPlanner project and choose <strong>Add</strong> > <strong>New File...</strong>.
+                </li>
+                <li>
+                    Select the <strong>iOS</strong> > <strong>Asset Catalog</strong> file template.
+                </li>
+                <li>
+                    Name the new Asset Catalog "Assets" and click the <strong>New</strong> button.
+                </li>
+            </ol>
+
+            <h2>Create an Image Set</h2>
+            <ol>
+                <li>
+                    In the Asset Catalog, right-click in the left panel and select <strong>New Image Set</strong>.
+                </li>
+                <li>
+                    Select the Image Set to open it.
+                </li>
+                <li>
+                    Click on the Image Set again and rename it to "DetailedSavings".
+                </li>
+                <li>
+                    Inside the <strong>Universal</strong> section, click the <strong>1x</strong>, <strong>2x</strong>, and <strong>3x</strong> boxes to navigate to the <strong>Exercise 5/Assets</strong> folder. Add the corresponding images for each resoultion box.
+                    For example, "DetailedSavings@1x.png" will be placed in the 1x box.
+                </li>
+            </ol>
+        </ide>
+        <ide name="vs">
+            <h2>Create an Asset Catalog</h2>
+            <ol>
+                <li>
+                Right click on the <strong>Asset Catalogs</strong> folder and select "Add Asset Catalog".
+                </li>
+                <li>
+                    Leave the <strong>Asset Catalog</strong> as it's default name and select "Add".
+                </li>
+            </ol>
+
+            <h2>Create an Image Set</h2>
+            <ol>
+                <li>
+                    In the <strong>Asset Catalog</strong>, select the green add button at the top-left side of the screen.
+                    <img src="res/images/Ex5_Add.png" width="250" alt="" style='border:1px solid #999999'/>
+                </li>
+                <li>
+                    In the add button dialog, select "Add Image Set". The Image Set should appear in the list below the green add button.
+                </li>
+                <li>
+                    Right click on the Image Set and rename it to "DetailedSavings".
+                </li>
+                <li>
+                    Select the Image Set to open it.
+                </li>
+                <li>
+                    For the 1x, 2x, and 3x boxes, select the browse button and navigate to the <strong>Exercise 5/Assets</strong> folder. Add the corresponding images for each resoultion box.
+                    For example, "DetailedSavings@1x.png" will be placed in the 1x box.
+                </li>
+            </ol>
+        </ide>
+
+        <h2>Apply an Image Set</h2>
+        <ol>
+                <li>
+                    Open the <strong>Main.storyboard</strong> designer file.
+                </li>
+                <li>
+                    Drag a new <code>UIImageView</code> from the toolbox onto the <code>AboutViewController</code>.
+                </li>
+
+                <li>
+                    In the Properties Window, select the "Layout" tab.
+                </li>
+        
+                <li>
+                    Set the <code>UIImageView</code>'s <strong>Width</strong> and <strong>Height</strong> properties to 200.
+                </li>
+                <li>
+                    Now that the size of the <code>UIImageView</code> has changed, you may have to move it into the center of the screen by dragging it. Be sure to 
+                    keep the <code>UIImageView</code> below the "Savings Planner" label.
+                </li>
+                <li>
+                    Give the <code>UIImageView</code> a name by setting its <code>Name</code> property to "pigImageView".
+                </li>
+
+                <li>
+                        Enter constraint mode by selecting the "Constraint Editing Mode" button.
+                        <div class="hintblock">
+                                <b>Quick Tip:</b> The "Constraint Editing Mode" button is located at the top-right side of the designer.
+                        </div>
+                        <img src="res/images/Ex3_Constraint.png" width="100" alt="" style='border:1px solid #999999'/>
+                    </li>
+                    <li>
+                            With the <code>UIImageView</code> selected add the following constraints:
+                            <ul>
+                                <li>
+                                    <strong>Top spacing constraint</strong>: top of <code>UIImageView</code> to bottom of "Savings Planner" label.
+                                </li>
+                                <li>
+                                    <strong>Horizontal alignment constraint</strong>: center of <code>UIImageView</code> to horizontal center of <code>AboutViewController</code>.
+                                    <div class="hintblock">
+                                            <b>Quick Tip:</b> To add this constraint, grab the center square and drop it on the line that is vertically going through the <code>UIImageView</code>.
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>Constant width constraint</strong>
+                                </li>
+                                <li>
+                                    <strong>Constant height constraint</strong>
+                                </li>
+                            </ul>
+                </li>
+                <li>
+                    Open <strong>AboutViewController.cs</strong>.
+                </li>
+                <li>
+                    Override the <code>ViewDidLoad</code> method and assign the <code>pigImageView</code>'s <code>Image</code> property to the DetailedSavings Image Set. 
+                    Use the <code>UIImage.FromBundle()</code> method and pass in "DetailedSavings" as the parameter.
+                    <p><a href="#" onclick="toggleCode(this,'Handler');return false;" class="uiitem">Show Code</a>
+                    <div class="indent-medium" id="Handler" style="display:none;">
+                        <pre class="prettyprint">
+public override void ViewDidLoad()
+{
+   base.ViewDidLoad();
+   pigImageView.Image = UIImage.FromBundle("DetailedSavings");
+}</pre>
+                    </div>
+                        </p>
+                </li>
+        
+        </ol>
+
+
+<!-- ************************************************************************************************************** -->
+
+        <h1>Summary</h1>
+        <p>
+            In this exercise, you added multiple versions of an image at different resolutions.
+        </p>
+        <div class="align-right">
+            <a href="../Start%20Here.html">Go Back</a>
+        </div>
+    </section>
+
+<!-- ************************************************************************************************************** -->
+
+    <script src="./res/js/jquery.min.js"></script>
+    <script src="./res/js/prettify.js"></script>
+    <script src="./res/js/script.js"></script>
+
+    <footer>Copyright (C) 2018 Xamarin Inc., Microsoft.</footer>
+</body>
+</html>
